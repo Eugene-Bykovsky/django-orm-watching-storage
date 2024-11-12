@@ -12,13 +12,21 @@ Python3 должен быть уже установлен.
 git@github.com:Eugene-Bykovsky/django-orm-watching-storage.git
 ```
 
-2. Установите зависимости командой:
+2. Установите виртуальное окружение и активируйте его: 
+
+```
+python3 -m venv venv  
+source venv/bin/activate  
+```
+
+
+3. Установите зависимости командой:
 
 ```
 pip install -r requirements.txt
 ```
 
-3. Настройте переменные окружения. Создайте файл .env в корневой директории проекта и добавьте следующие переменные:
+4. Настройте переменные окружения. Создайте файл .env в корневой директории проекта и добавьте следующие переменные:
 
 DATABASE_ENGINE: Движок базы данных (например, django.db.backends.postgresql).  
 DATABASE_HOST: Хост базы данных (например, localhost).  
@@ -26,19 +34,21 @@ DATABASE_PORT: Порт базы данных (например, 5432 для Pos
 DATABASE_NAME: Имя базы данных.  
 DATABASE_USER: Имя пользователя базы данных.  
 DATABASE_PASSWORD: Пароль для подключения к базе данных.  
+SECRET_KEY = Секретный ключ джанго
 DEBUG: Уровень отладки (например, True для режима разработки и False для продакшн).  
 
 Пример содержимого .env:
 
-DATABASE_ENGINE=django.db.backends.postgresql  
-DATABASE_HOST=localhost  
-DATABASE_PORT=5432  
-DATABASE_NAME=bank_security  
-DATABASE_USER=your_user  
-DATABASE_PASSWORD=your_password  
-DEBUG=True  
+export DATABASE_ENGINE=django.db.backends.postgresql  
+export DATABASE_HOST=localhost  
+export DATABASE_PORT=5432  
+export DATABASE_NAME=bank_security  
+export DATABASE_USER=your_user  
+export DATABASE_PASSWORD=your_password  
+export SECRET_KEY=SECRET_KEY
+export DEBUG=True  
 
-4. Запуск проекта  
+5. Запуск проекта  
 После установки зависимостей и настройки переменных окружения запустите сервер:
 
 ```
