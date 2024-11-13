@@ -38,15 +38,17 @@ Python3 должен быть уже установлен.
    
    _**Пример содержимого .env:**_
 
-   * export DATABASE_ENGINE=django.db.backends.postgresql
-   * export DATABASE_HOST=localhost
-   * export DATABASE_PORT=5432
-   * export DATABASE_NAME=bank_security
-   * export DATABASE_USER=your_user
-   * export DATABASE_PASSWORD=your_password
-   * export SECRET_KEY=SECRET_KEY
-   * export DEBUG=True
-   * export ALLOWED_HOSTS=localhost, 127.0.0.1
+   ```
+   export DATABASE_ENGINE=django.db.backends.postgresql  
+   export DATABASE_HOST=localhost  
+   export DATABASE_PORT=5432  
+   export DATABASE_NAME=bank_security  
+   export DATABASE_USER=your_user  
+   export DATABASE_PASSWORD=your_password  
+   export SECRET_KEY=SECRET_KEY  
+   export DEBUG=True  
+   export ALLOWED_HOSTS=localhost, 127.0.0.1
+   ```
 
 ## Запуск проекта  
 После установки зависимостей и настройки переменных окружения запустите сервер:
